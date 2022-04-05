@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Esse4</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+            integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+            integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="http://localhost:3000/bundle.js" defer></script>
+        <style type="text/css">
+            body {
+              background-color: #DADADA;
+            }
+            .sticky:after {
+                content: '';
+                display: block;
+                height: 0px;
+                clear: both;
+                visibility: hidden;
+            }
+            .ui.inverted.icon.menu .item {
+                color: rgba(255,255,255,0.5) !important;
+            }
+            .ui.inverted.icon.menu .item:hover {
+                color: rgba(255, 255, 255, 0.856) !important;
+            }
+            #nav .item.esse4 {
+                position: fixed; 
+                bottom: 0; 
+                width:100%; 
+            }
+            #nav .item.esse4 > h2 {
+                color: rgba(255,255,255,0.2);
+            }
+            #nav .item.esse4:hover {
+                cursor: default;
+                background: transparent !important;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Menu laterale -->
+        <div id="nav" class="ui inverted labeled icon left inline vertical sidebar menu uncover visible">
+            <a class="item" href="#">
+                <img src="https://qui.uniud.it/static/2016/img/logo-uniud-big.png" style="width: 150px; padding-top:15px; padding-bottom:15px;">
+            </a>
+            <a class="item user appelli" href="/appelli">
+                <i class="block layout icon"></i>
+                Appelli
+            </a>
+            <a class="item user prenotazioni" href="/prenotazioni">
+                <i class="calendar icon"></i>
+                Prenotazioni
+            </a>
+            <a class="item admin crea-appello" href="/crea-appello">
+                <i class="calendar plus outline icon"></i>
+                Crea Appello
+            </a>
+            <a class="item admin gestisci-appelli" href="/gestisci-appelli">
+                <i class="calendar alternate outline icon"></i>
+                Gestisci Appelli
+            </a>
+            <a class="item esse4" href="#">
+                <h2 class="ui header"><i class="icon server"></i>Esse4</h2>
+            </a>
+        </div>
+
+        <!-- "body" del template-->
+        <div class="ui container" id="cont" style="padding-top: 30px; padding-bottom: 70px;">
+            <div class="ui two column stackable grid">
+
+                <!-- parte sinistra -->
+                <div class="twelve wide column">
+                    <div class="my-component" style="margin-left: 85px">
+                        <!-- componenti -->
+                    </div>
+                </div>
+
+                <!-- parte destra (card studente) -->
+                <div class="four wide column">
+                    <div class="ui sticky">
+                        <!-- componente card -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="ui inverted vertical footer segment" style="margin: 5em 0em 0em; padding: 18px 0em;position:fixed;width: 100%; bottom: 0;">
+            <div class="ui center aligned container">
+                <div class="ui horizontal inverted small divided link list">
+                    <a class="item" href="#">2018 &bull; Progetto Applicazioni Web</a>
+                    <a class="item" href="#">Londero Christian</a>
+                    <a class="item" href="#">Londero Andrea</a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
