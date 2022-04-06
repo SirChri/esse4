@@ -1,7 +1,7 @@
 # Esse4
 A simpler but better looking esse3 (italian universities' portal), based on nodejs and mongodb (NoSQL).
 
-![Esse4](screen.png?raw=true)
+![Esse4](screen.jpeg?raw=true)
 
 ## How to use
 The `package.json` scripts available are the following:
